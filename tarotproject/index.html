@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Javon">
+    <meta name="description" content="tarot 3 card reading online for you to be happy">
+    <title>
+        Tarot 3-card reading
+    </title>
+    <link rel="stylesheet" href="./tarot.css">
+    
+    <!-- <script data-main="scripts/app" src="scripts/require.js"></script> -->
+</head>
+<body class="web-body">
+    <h1 class="main-header">Tarot 3-card reading</h1>
+    <h3 class="tarot-explained">
+        What is Tarot? Simply defined, Tarot cards are decks of cards with pictures, symbols, and numbers printed on them. In theory, tarot cards can be used for divination and can give insight into your past, present and future. 
+    </h3>
+    <br>
+    <h3 class="tarot-explained">
+        Tarot reading may seem supernatural and intimitdating to approach. However, Tarot cards can be quite simple and offer a different perspective to a difficult situation or question you may have. Additionally, reading Tarot cards can be simply a fun hobby.
+    </h3>
+    <br>
+    <h2 class="tarot-explained" id="begin">
+        Are you ready to start the Tarot reading? Let's begin!
+    </h2>
+    <a href="#arrow-destination">
+        <div class="scroll-down"></div>
+    </a>
+    <br>
+    <div class="question-input" id="QNheader">
+        <div id="arrow-destination-home">
+            <div id="arrow-destination"></div>
+        </div>
+        <h1>
+            Firstly, think of a question you would like answered from this reading.
+        </h1>
+        <ul class="question-tips" id="secQNtips">
+            <li>Question should be simple and open.</li>
+            <li>Questions should help you to understand areas of uncertainty in your life.</li>
+            <li>Try to pick a topic that you do no have any bias towards</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <form class="formgroup" action="./tarot.js" method="POST">
+        <label>Your Question:</label>
+        <input autocomplete="off" id="question" type="text" placeholder="Enter Question">
+    </form>
+    <a href="#allcards-container">
+        <button id="question-submit">Submit</button>
+    </a>
+
+    <div class="allcards-container" id="allcards-container">
+        <h1 id="card-container-heading">
+            Now, click on each card to reveal!
+        </h1>
+        <div class="indi-card-container" id="past-container">
+            <div class="card">
+                <figure class="back">
+                    <h1>The Past</h1>
+                </figure>
+                <figure class="front" id="past"></figure>
+            </div>
+        </div>
+        <div class="indi-card-container" id="present-container">
+            <div class="card">
+                <figure class="back">
+                    <h1>The Present</h1>
+                </figure>
+                <figure class="front" id="present"></figure>
+            </div>
+        </div><div class="indi-card-container" id="future-container">
+            <div class="card">
+                <figure class="back">
+                    <h1>The Future</h1>
+                </figure>
+                <figure class="front" id="future"></figure>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <button id="receive-reading">
+        How Curious! Click to receive your reading
+    </button> -->
+    
+</body>
+<script src="tarot.js"></script>
+</html>
